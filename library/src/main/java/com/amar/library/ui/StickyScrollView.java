@@ -8,6 +8,8 @@ import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.ScrollView;
 
+import androidx.core.widget.NestedScrollView;
+
 import com.amar.library.R;
 import com.amar.library.provider.ResourceProvider;
 import com.amar.library.provider.interfaces.IResourceProvider;
@@ -17,7 +19,7 @@ import com.amar.library.ui.presenter.StickyScrollPresenter;
 import com.amar.library.provider.ScreenInfoProvider;
 import com.amar.library.provider.interfaces.IScreenInfoProvider;
 
-public class StickyScrollView extends ScrollView implements IStickyScrollPresentation {
+public class StickyScrollView extends NestedScrollView implements IStickyScrollPresentation {
     private IScrollViewListener scrollViewListener;
 
     private View stickyFooterView;
